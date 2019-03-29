@@ -1,4 +1,4 @@
-PHP-JWT-SZ-VERSION
+PHP-JWT
 =======
 
 
