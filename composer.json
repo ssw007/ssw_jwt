@@ -1,0 +1,23 @@
+{
+  "name": "ssw/ssw_jwt",
+  "description": "TP5.1_JWT,SSW,SSW_JWT,JWT_SSW",
+  "homepage": "https://github.com/ssw007/ssw_jwt.git",
+  "authors": [
+    {
+      "name": "xiaowu",
+      "email": "18712858087@qq.com"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sswbase\\JWT\\": "src"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": " 4.8.35"
+  }
+}
