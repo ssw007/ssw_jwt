@@ -6,7 +6,7 @@ Installation
 ------------
 ```bash
 项目文件的composer.json的require加入以下代码
-"sz_jwt/sz_jwt": "dev-master"
+"ssw/ssw_jwt": "dev-master"
 
 然后执行
 
