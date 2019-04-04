@@ -52,8 +52,8 @@ class JwtAuth extends JWT
         $key = config()['jwt']['key'];
         try {
             JWT::$leeway = 60;
-            JWT::decode($token, $key, config()['jwt']['algorithms']);
-            return array('code' => 1, 'message' => 'success');
+            $tokenInfo=JWT::decode($token, $key, config()['jwt']['algorithms']);
+            return array('code' => 1, 'message' => $tokenInfo');
         } catch (SignatureInvalidException $e) {//签名不正确
             return array('code' => -1, 'message' => $e->getMessage());
         } catch (BeforeValidException $e) {//签名在某个时间点之后才能用
